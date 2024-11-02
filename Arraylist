@@ -1,0 +1,211 @@
+//import java.util.ArrayList;
+// basic of arraylist
+//public class ArrayList2 {
+    /* 
+        public static void main(String args[]) {
+       ArrayList<Integer> list = new ArrayList<>();
+       ArrayList<String> list2 = new ArrayList<>();
+        ArrayList<Boolean> list3 = new ArrayList<>();
+
+        // add element 0(1)
+    list.add(1);
+     list.add(2);
+     list.add(3);
+      list.add(4);
+
+
+      //list.add(1, 9); //0(n)
+      //System.out.println(list);
+
+
+     
+    
+
+      //Get Operation - 0(1)
+   int element = list.get(2);
+   System.out.println(element);
+   System.out.println(list.get());
+
+
+    //Delete 
+   // list .remove(2);
+   // System.out.println(list);
+
+
+    //set
+//list.set(2, 10);
+//System.out.println(list);
+
+
+
+
+//contains - elements exits krta h ki nhi, agr krta ho to true , no exixt to false 
+//System.out.println(list.contains(1));
+//System.out.println(list.contains(11));
+
+*/
+
+// Size in arraylist
+/* 
+list.add(1);
+     list.add(2);
+     list.add(3);
+      list.add(4);
+      System.out.println(list.size()); //4 total kitna element 
+*/
+/* 
+//print the arraylist
+for(int i = 0; i<list.size(); i++) {
+    System.out.print(list.get(i) + " "); // ith index ka value nikalne ke liye
+}
+System.out.println();
+
+// Q 1
+//Reverse print - 0*(n)
+     for(int i=list.size()-1; i>=0; i--) {
+        System.out.print(list.get(i) + " ");
+     }
+     System.out.println();
+
+
+
+// maximum element in array
+     list.add(1);
+     list.add(5);
+     list.add(8);
+     list.add(3);
+int max = Integer.MIN_VALUE; //minus infinity
+for(int i=0; i<list.size(); i++ ) {
+// if(max <list.get(i)) {
+       // max = list.get(i);
+    //}
+    //or singal line se likh
+    max = Math.max(max, list.get(i));  //sinal line se likh sakte hai
+}
+    System.out.println("max element = " + max);
+
+
+    }
+    }
+*/
+
+
+// Q 2
+//swap of two number
+import java.util.ArrayList;
+import java.util.Collections;
+public class ArrayList2 { 
+public static void swap(ArrayList<Integer> list, int idx1, int idx2) {
+    int temp = list.get(idx1);
+    list.set(idx1, list.get(idx2));
+    list.set(idx2, temp);
+}
+public static void main(String args[]) {
+    ArrayList<Integer> list = new ArrayList<>();
+    list.add(2);
+     list.add(5);
+     list.add(9);
+     list.add(3);
+     list.add(6);
+    // int idx1 = 1, idx2 = 3;
+     System.out.println(list);
+Collections.sort(list); //ascending order
+System.out.println(list);
+//descending order
+Collections.sort(list, Collections.reverseOrder());
+System.out.println(list);
+  //swap(list, idx1, idx2); System.out.println(list);
+}
+}
+
+// Q 3
+
+*/
+import java.util.ArrayList;
+public class ArrayList2 {
+    public static void main(String args[]) {
+ArrayList<ArrayList<Integer>> mainList = new ArrayList<>();
+ArrayList<Integer> list = new ArrayList<>();
+//list 1
+list.add(1); list.add(4);
+mainList.add(list);
+//list2
+ArrayList<Integer> list2 = new ArrayList<>();
+list2.add(3); list2.add(4);
+mainList.add(list2);
+  
+for(int i=0; i<mainList.size(); i++) {
+    ArrayList<Integer> currList = mainList.get(i);
+    for(int j=0; j<currList.size(); j++){
+    System.out.print(currList.get(j)+ " ");
+}
+System.out.println();
+// two print hoga list ki tarah hoga
+}
+System.out.println(mainList); // all structure aa jayega
+}
+}
+   */  
+/*
+
+// Q4
+// container with most water
+import java.util.ArrayList;
+public class ArrayList2 {
+    public static int StoreWater(ArrayList<Integer>height) {
+        int maxWater = 0;
+        for(int i = 0; i<height.size(); i++) {
+            for(int j= i+1; j<height.size(); j++) {
+                int ht = Math.min(height.get(i) , height.get(j)) ;
+                int width = j-i; 
+                 int currWater = ht * width;
+                 maxWater = Math.max(maxWater , currWater);
+            } }
+        return maxWater; }
+public static void main(String args[]) {
+    ArrayList<Integer>height = new ArrayList<>() ;
+    height.add(1);
+    height.add(8);
+    height.add(6);
+    height.add(2);
+    height.add(5);
+    height.add(4);
+    height.add(8);
+    height.add(3);
+    height.add(7);
+    System.out.println(StoreWater(height));
+}
+}
+
+*/
+
+
+
+     
+    
+
+
+
+
+
+
+     
+    
+
+
+
+
+
+     
+    
+
+
+
+
+
+     
+    
+
+
+
+

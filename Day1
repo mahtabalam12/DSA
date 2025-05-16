@@ -1,0 +1,107 @@
+Day1 topic to covered:
+Varible in java
+Input and Output in java
+Data types in java
+Comments in java
+Type Coversion in java
+Type Casting in java 
+Type Promotion in java
+
+
+/*
+// print Hello world
+public class JavaBasics {
+    
+        public static void main(String args[]) {
+            
+            System.out.println("Hello world");
+        }
+    }
+    */
+
+/*
+public class JavaBasics1 {
+    public static void main(String args[]){
+        int a = 10;
+int b = 5;
+int sum = a + b;
+System.out.println(sum);
+    }
+}
+*/
+
+/* Q 2 
+import java.util.*;
+public class JavaBasics {
+    public static void main(String args[]) {
+ Scanner sc = new Scanner(System.in);
+
+
+ int a = sc.nextInt();
+ int b = sc.nextInt();
+ int sum = a+b;
+
+ //String input = sc.next();
+
+System.out.println(sum);
+    }
+}
+*/
+
+// Areamof circle 
+/*  Q 3
+import java.util.*;
+public class JavaBasics {
+    public static void main(String args[]) {
+ Scanner sc = new Scanner(System.in);
+ float rad = sc.nextFloat();
+ float area = 3.14f*rad*rad;
+ System.out.println(area);
+    }
+}
+*/
+
+/* Q 4
+// type conversion 
+public class JavaBasics {
+    public static void main(String args[]) {
+    //    int a = 25;
+     //   long b = a;
+
+     long a = 25;
+     int b = a;  // error dega q ki long to int not possible (lossy conversion)
+        System.out.println(b);
+
+    }
+}
+*/
+
+/* Q 5
+public class JavaBasics {
+    public static void main(String args[]) {
+        char ch1 = 'a';
+        char ch2 = 'b';
+        int number1 = ch1;
+        int number2 = ch2;
+        System.out.println(number1);
+        System.out.println(number2);
+    }
+    
+}
+*/
+
+/* Q 6
+public class JavaBasics {
+    public static void main(String args[]) {
+        int a = 10;
+        float b = 20.3f;
+        long c = 25;
+        double d = 30;
+        double ans = a+b+c+d;
+
+ System.out.println(ans);
+    }
+    
+}
+
+*/

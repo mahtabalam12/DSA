@@ -1,4 +1,4 @@
-public class Linklist {
+public class Linklist  {
     
     public static class node {
         int data;

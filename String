@@ -1,4 +1,4 @@
-// Q : 1 palindrome 
+// Q :  1 palindrome 
 public class Strings {
         public static boolean isPalindrome (String str){
           for (int i = 0; i<str.length()/2; i++){

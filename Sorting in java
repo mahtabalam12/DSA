@@ -61,7 +61,7 @@ public static void main(String args[]) {
     printArr(arr);
 }
 }
-*/
+ */
 /* 
 // insertion sort
 public class Sorting {

@@ -4,7 +4,7 @@ public class Linklist  {
         int data;
         node next;
 
-        public node(int data) {
+        public node(int data)  {
             this.data = data;
             this.next = null;
         }
